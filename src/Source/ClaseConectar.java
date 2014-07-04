@@ -15,7 +15,7 @@ public class ClaseConectar {
     public Connection conectar(){
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbche", "root", "Dakaris7");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/nombrebasededatos", "Usuario", "Contraseña");
         } catch (ClassNotFoundException | SQLException e) {
             System.out.println("Error: " + e.getMessage());
         }
